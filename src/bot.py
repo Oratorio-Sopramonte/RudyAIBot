@@ -143,9 +143,13 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # This improves UX by giving immediate feedback.
     await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
     
+    # 3. Clean the input (remove mention) if present
+    if chat_type in ["group", "supergroup"] and f"@{context.bot.username}" in user_query:
+        user_query = user_query.replace(f"@{context.bot.username}", "").strip()
+
     try:
         if rag_pipeline:
-            # 3. Query the RAG Pipeline.
+            # 4. Query the RAG Pipeline.
             # This is where the heavy lifting happens: semantic search + LLM generation.
             response = rag_pipeline.query(user_query)
         else:
