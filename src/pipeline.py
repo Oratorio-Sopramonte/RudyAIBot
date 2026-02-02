@@ -2,7 +2,7 @@ import os
 import logging
 import time
 from pathlib import Path
-from typing import List, Union
+from typing import List, Union, Tuple, Any
 
 # --- Third Party Imports ---
 from dotenv import load_dotenv
@@ -109,7 +109,15 @@ class RAGService:
         
         logger.info("🚀 RAG DagPipeline initialized successfully (Gemini 2.5 Flash).")
 
-    def query(self, user_input: str) -> str:
+    def query(self, user_input: str, return_sources: bool = False) -> Union[str, Tuple[str, List[Any]]]:
+        """
+        Executes the RAG pipeline.
+        
+        Args:
+            user_input: The user's question.
+            return_sources: If True, returns a tuple (answer, list_of_retrieved_nodes).
+                            If False (default), returns just the answer string.
+        """
         try:
             result_dict = self.pipeline.run({
                 "embedder": {"text": user_input},
@@ -118,46 +126,29 @@ class RAGService:
                 "llm": {"input": user_input}
             })
             
-            response = result_dict.get("llm")
-            if hasattr(response, 'text'):
-                return response.text
-            return str(response)
+            # Extract Response
+            response_obj = result_dict.get("llm")
+            response_text = response_obj.text if hasattr(response_obj, 'text') else str(response_obj)
+
+            # Extract Sources (if requested)
+            if return_sources:
+                # 'retriever' key contains the output of the Qdrant component (list of chunks)
+                retrieved_chunks = result_dict.get("retriever", [])
+                return response_text, retrieved_chunks
+
+            return response_text
 
         except ClientError as e:
-            if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
-                return "⏳ Quota exceeded. Please wait 10-20 seconds and try again."
+            msg = "⏳ Quota exceeded. Please wait 10-20 seconds and try again." if ("429" in str(e) or "RESOURCE_EXHAUSTED" in str(e)) else f"API Error: {e}"
             logger.error(f"Google API Error: {e}")
-            return f"API Error: {e}"
+            return (msg, []) if return_sources else msg
             
         except Exception as e:
             logger.error(f"Pipeline Run Failed: {e}", exc_info=True)
-            return "I'm sorry, I encountered an error."
+            msg = "❌ I'm sorry, I encountered an error."
+            return (msg, []) if return_sources else msg
 
     def close(self):
         """Explicitly close the Qdrant client to avoid shutdown errors."""
         if self.real_qdrant_client:
             self.real_qdrant_client.close()
-
-# ------------------------------------------------------------------------------
-# Test Run
-# ------------------------------------------------------------------------------
-if __name__ == "__main__":
-    rag = None
-    try:
-        rag = RAGService()
-        print("\n💬 Asking Rudy...")
-        
-        # Simple retry logic for the test
-        for i in range(3):
-            answer = rag.query("Tell me something about this document")
-            if "Quota exceeded" in answer:
-                print("⚠️  Hit rate limit. Retrying in 15 seconds...")
-                time.sleep(15)
-                continue
-            else:
-                print(f"\n🤖 Rudy: {answer}")
-                break
-                
-    finally:
-        if rag:
-            rag.close()

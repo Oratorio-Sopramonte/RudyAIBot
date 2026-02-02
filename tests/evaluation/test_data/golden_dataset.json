@@ -1,0 +1,463 @@
+[
+    {
+        "question": "Cosa comprende l'incarico di gestione sala settimanale?",
+        "ground_truth": "L'incarico comprende l'apertura e l'istruzione dei sorvegliati del sabato sera.",
+        "expected_context_keywords": [
+            "gestione sala settimanale",
+            "apertura",
+            "istruzione",
+            "sorvegliati"
+        ]
+    },
+    {
+        "question": "Quando si possono far visitare le sale?",
+        "ground_truth": "Gli orari possono essere serali o al mattino presto dopo la doccia, accordandosi con gli utenti.",
+        "expected_context_keywords": [
+            "visitare",
+            "serali",
+            "mattino presto",
+            "doccia"
+        ]
+    },
+    {
+        "question": "Qual è la prima cosa da fare al mattino durante la settimana di gestione?",
+        "ground_truth": "Alzarsi dal letto appoggiando come prima cosa i piedi.",
+        "expected_context_keywords": [
+            "mattino",
+            "piedi",
+            "alzarsi"
+        ]
+    },
+    {
+        "question": "Con quanto anticipo bisogna contattare chi ha prenotato la sala?",
+        "ground_truth": "Bisogna contattare le persone almeno 7-10 giorni prima della data di prenotazione.",
+        "expected_context_keywords": [
+            "contattare",
+            "7-10 giorni",
+            "prenotazione"
+        ]
+    },
+    {
+        "question": "Dove si trovano le chiavi per l'accesso?",
+        "ground_truth": "Le chiavi si trovano nel bussolotto.",
+        "expected_context_keywords": [
+            "chiavi",
+            "bussolotto",
+            "codice"
+        ]
+    },
+    {
+        "question": "Ogni quanto cambia il codice del bussolotto?",
+        "ground_truth": "Il codice viene cambiato mensilmente e inviato sul gruppo.",
+        "expected_context_keywords": [
+            "codice",
+            "mensilmente",
+            "gruppo"
+        ]
+    },
+    {
+        "question": "A cosa servono i soldi chiesti per l'affitto della sala?",
+        "ground_truth": "Servono per la gestione della sala e per le attività per i ragazzi della comunità.",
+        "expected_context_keywords": [
+            "soldi",
+            "gestione",
+            "attività",
+            "ragazzi"
+        ]
+    },
+    {
+        "question": "Cosa bisogna fare se vengono prenotate entrambe le sale?",
+        "ground_truth": "Bisogna preparare aperta la parete divisoria.",
+        "expected_context_keywords": [
+            "entrambe le sale",
+            "parete",
+            "aperta"
+        ]
+    },
+    {
+        "question": "Quale frigorifero si accende per la prenotazione della sala giochi?",
+        "ground_truth": "Si deve accendere il frigo della cucina.",
+        "expected_context_keywords": [
+            "frigorifero",
+            "sala giochi",
+            "cucina"
+        ]
+    },
+    {
+        "question": "Quale frigorifero si accende per la sala polivalente?",
+        "ground_truth": "Si deve accendere il frigo azzurro accanto all'armadio.",
+        "expected_context_keywords": [
+            "frigorifero",
+            "sala polivalente",
+            "frigo azzurro",
+            "armadio"
+        ]
+    },
+    {
+        "question": "Cosa si deve fare con i bidoni delle immondizie?",
+        "ground_truth": "I bidoni delle immondizie devono essere tolti dalla sala.",
+        "expected_context_keywords": [
+            "bidoni",
+            "immondizie",
+            "tolti"
+        ]
+    },
+    {
+        "question": "Dove si trova la scorta di carta igienica?",
+        "ground_truth": "La scorta è sopra l'armadio in ferro nello sgabuzzino.",
+        "expected_context_keywords": [
+            "carta igienica",
+            "scorta",
+            "armadio in ferro",
+            "sgabuzzino"
+        ]
+    },
+    {
+        "question": "Qual è la regola obbligatoria per chi usa il bagno delle donne?",
+        "ground_truth": "Chi va nel bagno delle donne deve obbligatoriamente sedersi per fare pipì.",
+        "expected_context_keywords": [
+            "bagno delle donne",
+            "sedersi",
+            "pipi"
+        ]
+    },
+    {
+        "question": "Cosa bisogna controllare nel gioco delle freccette?",
+        "ground_truth": "Bisogna controllare la presenza di crediti.",
+        "expected_context_keywords": [
+            "freccette",
+            "crediti",
+            "presenza"
+        ]
+    },
+    {
+        "question": "È possibile utilizzare il biliardo grande?",
+        "ground_truth": "No, non si può utilizzare il biliardo grande, su richiesta solo il piccolino.",
+        "expected_context_keywords": [
+            "biliardo grande",
+            "piccolino",
+            "richiesta"
+        ]
+    },
+    {
+        "question": "Dove si lascia il telecomando del videoproiettore se richiesto?",
+        "ground_truth": "Si lascia sull'impianto la sera prima o al mattino.",
+        "expected_context_keywords": [
+            "videoproiettore",
+            "telecomando",
+            "impianto"
+        ]
+    },
+    {
+        "question": "Dove si trova il telecomando del videoproiettore quando non è in uso?",
+        "ground_truth": "Si trova nell'armadio grigio affianco all'impianto.",
+        "expected_context_keywords": [
+            "telecomando",
+            "armadio grigio",
+            "impianto"
+        ]
+    },
+    {
+        "question": "Qual è il codice del bussolotto per le chiavi dell'impianto?",
+        "ground_truth": "Il codice è 125.",
+        "expected_context_keywords": [
+            "chiavi",
+            "bussolotto",
+            "codice",
+            "125"
+        ]
+    },
+    {
+        "question": "Cosa bisogna fare con le immondizie dopo l'uso della sala?",
+        "ground_truth": "Devono essere portate via, anche se sono state richieste le pulizie.",
+        "expected_context_keywords": [
+            "immondizie",
+            "portate via",
+            "pulizie"
+        ]
+    },
+    {
+        "question": "Da che ora si può accedere alla sala per prepararla?",
+        "ground_truth": "Dopo le 10 del mattino.",
+        "expected_context_keywords": [
+            "accedere",
+            "sala",
+            "mattino",
+            "10"
+        ]
+    },
+    {
+        "question": "Entro quando va fatta la pulizia il giorno dopo?",
+        "ground_truth": "Entro le 10 del mattino, se la sala non è prenotata.",
+        "expected_context_keywords": [
+            "pulizia",
+            "giorno dopo",
+            "entro le 10"
+        ]
+    },
+    {
+        "question": "Si può appendere qualcosa ai muri?",
+        "ground_truth": "No, non si può appendere niente sui muri.",
+        "expected_context_keywords": [
+            "appendere",
+            "muri",
+            "niente"
+        ]
+    },
+    {
+        "question": "Qual è la raccomandazione per l'uso della sala dopo le 24?",
+        "ground_truth": "Tenere la musica bassa ed evitare schiamazzi nel piazzale.",
+        "expected_context_keywords": [
+            "dopo le 24",
+            "musica bassa",
+            "schiamazzi",
+            "piazzale"
+        ]
+    },
+    {
+        "question": "Dove si trovano gli strumenti e i detersivi per le pulizie?",
+        "ground_truth": "Si trovano nello sgabuzzino.",
+        "expected_context_keywords": [
+            "strumenti",
+            "pulizie",
+            "detersivi",
+            "sgabuzzino"
+        ]
+    },
+    {
+        "question": "Come va riassettata la sala?",
+        "ground_truth": "Va riassettata come da foto sull'armadio.",
+        "expected_context_keywords": [
+            "riassettata",
+            "foto",
+            "armadio"
+        ]
+    },
+    {
+        "question": "Cosa è vietato fare sui divani?",
+        "ground_truth": "Non si usano i divani per fare zozzerie.",
+        "expected_context_keywords": [
+            "divani",
+            "zozzerie"
+        ]
+    },
+    {
+        "question": "Quando viene accesa la caldaia?",
+        "ground_truth": "La caldaia viene accesa 1 ora prima dell'utilizzo della sala.",
+        "expected_context_keywords": [
+            "caldaia",
+            "accesa",
+            "1 ora prima"
+        ]
+    },
+    {
+        "question": "Come regolare la velocità dei ventilatori del riscaldamento?",
+        "ground_truth": "Mettere su III appena accesi, poi posizionare su I quando è caldo.",
+        "expected_context_keywords": [
+            "velocità",
+            "ventil",
+            "III",
+            "I"
+        ]
+    },
+    {
+        "question": "Cosa fare se il riscaldamento non parte?",
+        "ground_truth": "Bisogna essere pronti a riscaldare le persone con il proprio corpo.",
+        "expected_context_keywords": [
+            "riscaldamento",
+            "non parte",
+            "riscaldare",
+            "corpo"
+        ]
+    },
+    {
+        "question": "Quale interruttore si usa per accendere l'impianto audio generale?",
+        "ground_truth": "L'interruttore -1-, posizionandolo su 1.",
+        "expected_context_keywords": [
+            "interruttore-1",
+            "accendere",
+            "impianto"
+        ]
+    },
+    {
+        "question": "Qual è il nome del Bluetooth dell'impianto principale?",
+        "ground_truth": "Il nome è 'BLUETOOTH'.",
+        "expected_context_keywords": [
+            "bluetooth",
+            "nome"
+        ]
+    },
+    {
+        "question": "Come si regola il volume dell'impianto audio?",
+        "ground_truth": "Ruotando entrambi gli interruttori -3- allo stesso modo.",
+        "expected_context_keywords": [
+            "regolare",
+            "volume",
+            "interruttori -3-"
+        ]
+    },
+    {
+        "question": "Cosa fare se il Bluetooth non si collega?",
+        "ground_truth": "Controllare che non ci sia un altro telefono collegato, oppure spegnere e riaccendere.",
+        "expected_context_keywords": [
+            "bluetooth",
+            "non si collega",
+            "speghi e riaccendi"
+        ]
+    },
+    {
+        "question": "Come si accende l'audio della sala giochi?",
+        "ground_truth": "Posizionare interruttore-1 su 1, selezionare sale divise con interruttore-2, accendere la ciabatta nell'armadio e collegarsi a 'Youmix-402media'.",
+        "expected_context_keywords": [
+            "sala giochi",
+            "Youmix",
+            "ciabatta",
+            "mixer"
+        ]
+    },
+    {
+        "question": "Come si collega il proiettore?",
+        "ground_truth": "Ci si collega con il cavo HDMI a un portatile e lo si accende col telecomando.",
+        "expected_context_keywords": [
+            "proiettore",
+            "cavo HDMI",
+            "telecomando"
+        ]
+    },
+    {
+        "question": "Dove si trovano le chiavi per pentole e utensili?",
+        "ground_truth": "Le chiavi per il magazzino utensili sono nello sgabuzzino.",
+        "expected_context_keywords": [
+            "chiavi",
+            "utensili",
+            "magazzino",
+            "sgabuzzino"
+        ]
+    },
+    {
+        "question": "La cucina è compresa se si richiedono le pulizie?",
+        "ground_truth": "No, la cucina non è compresa nelle pulizie.",
+        "expected_context_keywords": [
+            "cucina",
+            "pulizie",
+            "non è compresa"
+        ]
+    },
+    {
+        "question": "Si possono portare friggitrici da casa?",
+        "ground_truth": "No, non si possono portare fornetti o friggitrici varie all'interno della struttura.",
+        "expected_context_keywords": [
+            "friggitrici",
+            "fornetti",
+            "vietato"
+        ]
+    },
+    {
+        "question": "A che ora è il ritrovo per i sorvegliati del sabato sera?",
+        "ground_truth": "Il ritrovo è alle 19.45 all'oratorio.",
+        "expected_context_keywords": [
+            "sabato sera",
+            "19.45",
+            "ritrovo"
+        ]
+    },
+    {
+        "question": "Dove si trova l'occorrente per il bar del sabato sera?",
+        "ground_truth": "Nell'armadio in ferro nello sgabuzzino.",
+        "expected_context_keywords": [
+            "bar",
+            "armadio in ferro",
+            "sgabuzzino"
+        ]
+    },
+    {
+        "question": "Dove va messa la cassetta rossa con i soldi il sabato?",
+        "ground_truth": "Va portata sulla scrivania.",
+        "expected_context_keywords": [
+            "cassetta rossa",
+            "soldi",
+            "scrivania"
+        ]
+    },
+    {
+        "question": "Cosa bisogna fare per andare in bagno (sabato sera)?",
+        "ground_truth": "Bisogna abbassare i pantaloni.",
+        "expected_context_keywords": [
+            "bagno",
+            "pantaloni",
+            "abbassare"
+        ]
+    },
+    {
+        "question": "Dove si lasciano le chiavi alla chiusura del sabato?",
+        "ground_truth": "Nel bussolotto.",
+        "expected_context_keywords": [
+            "bussolotto",
+            "chiavi",
+            "chiusura"
+        ]
+    },
+    {
+        "question": "A quale dispositivo bluetooth ci si collega il sabato sera per la musica?",
+        "ground_truth": "Ci si collega all'impianto sala giochi.",
+        "expected_context_keywords": [
+            "sabato sera",
+            "bluetooth",
+            "sala giochi"
+        ]
+    },
+    {
+        "question": "Qual è la raccomandazione in caso di urgente stimolo in bagno?",
+        "ground_truth": "Centrare il buco del bagno.",
+        "expected_context_keywords": [
+            "urgente stimolo",
+            "buco",
+            "bagno"
+        ]
+    },
+    {
+        "question": "Quali bibite richiedono attenzione vicino al biliardo?",
+        "ground_truth": "Si raccomanda attenzione con le bibite nei pressi del biliardo.",
+        "expected_context_keywords": [
+            "bibite",
+            "biliardo",
+            "attenzione"
+        ]
+    },
+    {
+        "question": "Chi gestisce la serata del sabato?",
+        "ground_truth": "I ragazzi si lasciano in autonomia a gestire la serata.",
+        "expected_context_keywords": [
+            "autonomia",
+            "gestire",
+            "ragazzi"
+        ]
+    },
+    {
+        "question": "Chi può sostituire i sorveglianti in caso di necessità?",
+        "ground_truth": "Qualcuno del direttivo.",
+        "expected_context_keywords": [
+            "sostituire",
+            "direttivo",
+            "necessità"
+        ]
+    },
+    {
+        "question": "Dove si trovano microfoni e telecomando proiettore?",
+        "ground_truth": "Nell'armadio grigio a fianco all'impianto.",
+        "expected_context_keywords": [
+            "microfoni",
+            "telecomando",
+            "armadio grigio"
+        ]
+    },
+    {
+        "question": "Cosa bisogna fare se serve il riscaldamento?",
+        "ground_truth": "Chiedere conferma delle ore e aggiornare il file Excel se diverse.",
+        "expected_context_keywords": [
+            "riscaldamento",
+            "excel",
+            "conferma"
+        ]
+    }
+]

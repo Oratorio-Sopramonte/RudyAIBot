@@ -11,6 +11,7 @@ __pycache__/
 *.pyd
 .Python
 *.log
+*.pytest_cache
 
 # Data & Storage (Local)
 model_cache/*

@@ -6,3 +6,9 @@ datapizza-ai-clients-google
 datapizza-ai-embedders-fastembedder 
 fastembed 
 PyYAML
+
+# Dev Dependencies
+pytest
+pytest-asyncio
+pytest-mock
+scikit-learn
