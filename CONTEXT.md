@@ -24,10 +24,11 @@ The system operates in two distinct phases:
 **Phase A: The Ingestion Pipeline (Static/Triggered)**
 - Load: The IngestionPipeline monitors a local folder or receiving a command to read oratorio_rules.pdf.
 - Parse & Split: The PDF is parsed into structured nodes.
-- Embed & Store: Nodes are converted into vectors and stored in the Qdrant Vector DB.
+- Embed & Store: Nodes are converted into vectors and stored in a local Vector DB.
 
 **Phase B: The Chat Workflow (Dynamic)**
-- Input: User sends a question via Telegram.Query Rewriting: The system clarifies the question (e.g., handling "What time?" by expanding to "What time does the Oratorio open?").
+- Input: User sends a question via Telegram.
+- Query Rewriting: The system clarifies the question (e.g., handling "What time?" by expanding to "What time does the Oratorio open?").
 - Retrieval: The DagPipeline searches the Vector DB for the top $k$ relevant text chunks.
 - Generation: The LLM receives the chunks + the question and generates a grounded response.
 - Output: The bot sends the response to the user with a reference to the source.
@@ -35,10 +36,10 @@ The system operates in two distinct phases:
 ## 🛠 Project Structure (Folder Tree)
 ```Plaintext
 RudyAIBot/
-├── data/                # Store your Oratorio PDFs here
+├── documents/           # Store your Oratorio PDFs here
 ├── src/
 │   ├── ingestion.py     # Data parsing and vector indexing
-│   ├── pipeline.py      # Datapizza RAG logic configuration
+│   ├── agent.py         # Datapizza RAG agent configuration
 │   └── bot.py           # Telegram bot handlers and lifecycle
 ├── .env.example         # Template for API keys
 └── requirements.txt     # Project dependencies

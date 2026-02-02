@@ -1,7 +1,8 @@
 python-telegram-bot
-qdrant-client
-llama-index
-llama-index-vector-stores-qdrant
-llama-index-embeddings-openai
-llama-index-readers-docling
 python-dotenv
+datapizza-ai
+datapizza-ai-parsers-docling
+datapizza-ai-clients-google
+datapizza-ai-embedders-fastembedder 
+fastembed 
+PyYAML

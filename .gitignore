@@ -1,5 +1,25 @@
+# Environments
+.env
 .venv/
+venv/
+env/
+
+# Python
 __pycache__/
 *.pyc
-.env
+*.pyo
+*.pyd
+.Python
+*.log
+
+# Data & Storage (Local)
+model_cache/*
+storage/*
+
+# OS
 .DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/

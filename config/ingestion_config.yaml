@@ -1,0 +1,12 @@
+# config/ingestion_config.yaml
+
+# Configuration Parameters
+embedding_model: "BAAI/bge-small-en-v1.5"
+chunk_size: 512
+
+# Paths (relative to the project root)
+paths:
+  data_dir: "./documents"
+  storage_dir: "./storage/qdrant_db"
+  cache_dir: "./model_cache"
+  collection_name: "my_knowledge_base"
