@@ -132,6 +132,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
     # 1. Extract the text of the message from the user.
     user_query = update.message.text
+    chat_type = update.effective_chat.type
+
+    # Logica per i gruppi: rispondi solo se menzionato
+    if chat_type in ["group", "supergroup"]:
+        if not (update.message.reply_to_message and update.message.reply_to_message.from_user.id == context.bot.id) and f"@{context.bot.username}" not in user_query:
+            return # Ignora il messaggio se non è una menzione o una risposta al bot
     
     # 2. Indicate typing status to show the bot is "thinking".
     # This improves UX by giving immediate feedback.

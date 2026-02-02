@@ -84,7 +84,7 @@ class RAGService:
 
         self.llm_client = GoogleClient(
             api_key=self.api_key,
-            model="gemini-2.5-flash", 
+            model="gemini-2.5-flash-lite", 
             system_prompt="Tu sei RudyAIbot, un assistente esperto per la gestione dell'oratorio. " +
             " Il tuo compito è fornire risposte complete, dettagliate ed esaustive basate sui documenti dell'oratorio. " +
             " Non essere troppo sintetico: se il contesto contiene procedure, regole dettagliate o liste di cose da fare, " + 
